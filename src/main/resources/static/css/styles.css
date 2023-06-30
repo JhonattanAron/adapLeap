@@ -1,0 +1,398 @@
+/*nav var*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(336deg, rgba(127, 209, 147, 0.3) 0%, rgba(44, 123, 226, 0.3) 37%, rgba(235, 210, 165, 0.3) 100%);
+}
+
+body {
+    overflow-x: hidden;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(336deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 37%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.background-trans {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.navMenu {
+    font-family: "Montserrat", sans-serif;
+    background: rgb(46, 46, 48, 0);
+    position: relative;
+    width: 80%;
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    transition: 0.5s;
+}
+
+nav:hover {
+    background-color: rgb(46, 46, 48, 0.7);
+    transition: 0.5s;
+}
+
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 80px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnNav {
+    margin: 0.3vh;
+    margin-top: 2vh;
+    padding: 11px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0.1);
+    font-family: 'Gasoek One', sans-serif;
+    color: white;
+    font-size: medium;
+    margin-left: 10px;
+    border: none;
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+    transition: 0.5s;
+}
+
+.btnNav:hover {
+    background-color: #fddb3a;
+    color: black;
+    transition: 0.5s;
+}
+
+.navMenu a:hover {
+    color: #fddb3a;
+    text-decoration: underline;
+}
+
+.inicio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh;
+    border-radius: 10px;
+    padding: 3vh;
+}
+
+.content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.img img {
+    width: 55%;
+    margin: 20px;
+    border-radius: 35%;
+    width: auto;
+    height: 60vh;
+    transform: translate(0px);
+    animation: animImg 6s ease-in-out infinite;
+}
+
+.border {
+    border: 0.5px solid rgb(73, 69, 69);
+    margin: 3vh;
+    border-radius: 10px;
+}
+
+.vh-80-h {
+    height: 80vh;
+}
+
+.content-two {
+    padding: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+/*cards*/
+.container-c {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 38px;
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 3vh;
+    width: 80%;
+    opacity: 1;
+    transform: translateX(100%);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.container-c.visible {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.container-r {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2s ease, transform 2s ease;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner-image {
+    font-size: 30vh;
+    color: white;
+}
+
+.font {
+    font-family: 'Gasoek One', sans-serif;
+    color: rgba(255, 255, 255, 0.98);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+
+.cards p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.button-wrapper {
+    margin-top: 18px;
+}
+
+.btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.btn+.btn {
+    margin-left: 10px;
+}
+
+.outline {
+    background: transparent;
+    color: rgba(0, 212, 255, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.6);
+    transition: all .3s ease;
+
+}
+
+.outline:hover {
+    transform: scale(1.125);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease;
+}
+
+.fill {
+    background: rgba(0, 212, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
+    filter: drop-shadow(0);
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.fill:hover {
+    transform: scale(1.125);
+    border-color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+    transition: all .3s ease;
+}
+.img-article{
+    width: 200px !important;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btns {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btns:hover,
+.btns:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.btnSm {
+    display: none;
+}
+
+.fourth {
+    border-color: #0ff1ad;
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #0ff1e6 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #0ff1f1 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+.fourth:hover {
+    background-position: 0;
+}
+
+.dis-flex {
+    display: flex;
+}
+/*info*/
+.info{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(336deg, rgba(255, 255, 255) 0%, rgb(170, 202, 235) 37%, rgb(142, 230, 156) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.h1-info{
+    color: #000000;
+    
+}
+.title-info{
+    color: #33a7dd;
+    font-family: 'Gasoek One', sans-serif;
+}
+.card-info{
+    width: 30%;
+    margin: 10px;
+}
+
+/*info*/
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+
+    /* Reglas de estilo para dispositivos móviles */
+    .content {
+        width: 100%;
+        padding: 3vh;
+    }
+
+    .inicio {
+        height: 100vh;
+    }
+
+    .img {
+        width: 100%;
+        padding: 1vh;
+    }
+
+    .img img {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        transform: translateX(-22px) !important;
+    }
+
+    .container-c {
+        width: 100%;
+    }
+
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Reglas de estilo para tablets */
+
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    /* Reglas de estilo para dispositivos móviles */
+}
+
+@keyframes fadeInR {
+    0% {
+        transform: translateX(100vh);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animImg {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

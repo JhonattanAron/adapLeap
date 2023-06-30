@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="./js/fandein.js"></script>
+    <script src="./js/fetchArticles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg background-trans">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="bi bi-amd m-3"></i>AdaptLeap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex">
+                <button class="btn btn-outline-success" type="submit">Log In</button>
+                <button class="btn btn-outline-warning" type="submit">Sing Up</button>
+            </div>
+              
+          </div>
+        </div>
+      </nav>
+    <section class="d-flex flex-column background-trans border vh-80-h inicio" id="inicio">
+        <div class="content">
+            <div>
+                <span>The Best Online Stores</span>
+                <h1>AdaptLeap Empower <br> Your Business Online, <br> Create Your Virtual Store <br> with Us
+                </h1>
+                <div class="dis-flex">
+                    <button class="btns fourth">!EMPEZEMOS</button>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="img/7843794.webp" alt="img-inicio">
+        </div>
+    </section>
+    <section class="border background-trans cards content-two">
+        <div class="container-c">
+            <div class="wrapper">
+                <i class="bi bi-person-badge-fill banner-image"></i>
+                <h1 class="font">Servicio Tecnico</h1>
+                <p>¡Obtén el apoyo tecnológico
+                    que necesitas con nuestra asistencia técnica especializada!
+                    Nuestro equipo de expertos en soluciones informáticas está listo para brindarte
+                    un soporte integral y resolver cualquier problema que puedas enfrentar.</p>
+            </div>
+            <div class="dis-flex">
+                <button class="btns fourth">!EMPEZEMOS</button>
+            </div>
+        </div>
+        <div class="container-c">
+            <div class="wrapper">
+                <i class="bi bi-basket-fill banner-image"></i>
+                <h1 class="font">Tu propia Tienda Online</h1>
+                <p>¡Bienvenido a nuestra tienda online personalizable al 100%! Aquí podrás diseñar y crear
+                    la experiencia de compra perfecta según tus necesidades y preferencias.
+                    Nos enorgullece ofrecerte un entorno de compras en línea donde cada aspecto
+                    se adapte a ti.</p>
+            </div>
+            <div class="dis-flex">
+                <button class="btns fourth">!EMPEZEMOS</button>
+            </div>
+        </div>
+        <div class="container-c" id="c1">
+            <div class="wrapper">
+                <i class="bi bi-chat-square-text-fill banner-image"></i>
+                <h1 class="font">Asistencia Unica</h1>
+                <p>En nuestra tienda online, nos preocupamos por ofrecerte
+                    una experiencia de compra ininterrumpida y sin complicaciones.
+                    notifica al soporte cualquier error del servidor para brindarte una respuesta inmediata en caso de
+                    cualquier
+                    problema técnico.</p>
+            </div>
+            <div class="dis-flex">
+                <button class="btns fourth">!EMPEZEMOS</button>
+            </div>
+        </div>
+    </section>
+    <div class="info">
+      <h1 class="h1-info">Articulos</h1>
+      <h1 class="title-info">Vea Nuestros Ultimos Articulos De Blog</h1>
+      <div id="carouselExampleSlidesOnly" class="carousel slide p-3" data-bs-ride="carousel">
+        <div class="carousel-inner" id="articles">
+
+          <div class="carousel-item active">
+            <div class="card background-trans">
+              <img src="..." class="card-img-top img-article" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div style="height: 50vh;">
+
+    </div>
+</body>
+
+</html>
