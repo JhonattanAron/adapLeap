@@ -21,4 +21,16 @@ public class UserService {
         user.setTelefone(telefone);
         return usersRespository.save(user);
     }
+
+    public Usuarios loginUser(String email, String password) {
+
+        Usuarios usuario = usersRespository.findByEmail(email);
+
+        if (usuario != null && usuario.getPassword().equals(password)) {
+            return usuario;
+        } else {
+            return null;
+        }
+    }
+
 }
