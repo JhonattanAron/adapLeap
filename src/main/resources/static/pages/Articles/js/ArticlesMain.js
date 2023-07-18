@@ -16,7 +16,6 @@ function fecthArticles(html) {
                     <img class="imgCard"
                         src="${art.imgUrl}" alt="img">
                     <a href="${articleUrl}">${art.tittle}</a>
-                    <a class="btnLink" href="${articleUrl}"><button type="button" class="btn btn-outline-info">Visitar Sitio</button></a>
                 </li>
                 `
                 html.innerHTML = htmlInner;
