@@ -41,7 +41,7 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="../index.html">
             <i class="bi bi-info-square favico m-3"></i><span th:text="${article.tittle}">
             </span>
           </a>
@@ -54,10 +54,10 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="fruit.html"> Fruits</a>
+                  <a class="nav-link" href="fruit.html"> Articles</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="service.html"> Services </a>
@@ -86,15 +86,14 @@
       <h2 class="custom_heading" th:text="${article.tittle}" ></h2>
       <p class="custom_heading-text">
         
-        <a href="">
+        <a href="../index.html">
           <button class="btn btn-success" ><i class="bi bi-amd m-3"></i><h5>AdapLeap.com</h5> </button>
           </a>
       </p>
       <div class="row layout_padding2">
         <div class="col-md-8">
           <div class="fruit_detail-box">
-            <h3>
-              Sub Title
+            <h3 th:text="${article.tittle}">
             </h3>
             <p th:text="${article.paragraphOne}" class="mt-4 mb-5">
               

@@ -79,6 +79,7 @@ public class ApiControler {
     @CrossOrigin(origins = "http://localhost")
     @PostMapping("/articles/register")
     public Articles registerArticle(@RequestBody Articles request) {
+        System.out.println("Recibiendo Datos......");
         String tittle = request.getTittle();
         String imgUrl = request.getImgUrl();
         String p1 = request.getParagraphOne();
